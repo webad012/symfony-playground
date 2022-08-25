@@ -1,3 +1,19 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+triangle_show:
+    path:       /triangle/{a}/{b}/{c}
+    controller: App\Controller\TriangleController::show
+    methods:    GET
+
+circle_show:
+    path:       /circle/{radius}
+    controller: App\Controller\CircleController::show
+    methods:    GET
+
+geometry_calculator_1:
+    path:       /geometry-calculator/1
+    controller: App\Controller\GeometryCalculatorController::sumAreas
+    methods:    GET
+
+geometry_calculator_2:
+    path:       /geometry-calculator/2
+    controller: App\Controller\GeometryCalculatorController::sumCircumferences
+    methods:    GET
